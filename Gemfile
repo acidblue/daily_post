@@ -28,12 +28,13 @@ gem 'spring',        group: :development
 
 group :development, :test do
 	gem 'rspec-rails'
-end
-
-
-group :development do 
 	gem 'sqlite3'
+	gem 'guard-rspec'
+	gem 'spork-rails'
+	gem 'guard-spork'
+	gem 'childprocess'
 end
+
 
 group :test do
 	gem 'selenium-webdriver'
